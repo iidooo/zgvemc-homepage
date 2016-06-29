@@ -1,0 +1,23 @@
+
+
+#ads{
+    overflow: hidden;
+    width:100%;
+    height: 180px;
+}
+
+#ads img {
+    height: 180px;
+    width: 138px;
+    border: 1px solid #cccccc;
+}
+#ads ul {
+    list-style: none
+}
+#ads li {
+    float: left;
+    padding: 0 5px;
+}
+#inner01, #inner02 {
+    float: left;
+}

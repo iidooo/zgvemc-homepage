@@ -1,0 +1,55 @@
+#header .banner {
+    background-image: url("../../img/bg-1200.jpg");
+    background-size: 100% 100% ;
+    background-repeat: no-repeat;
+    background-position:center;
+    height: 200px;
+}
+
+#header .banner-title{
+    position: absolute;
+    z-index: 1;
+    top: 50px;
+    left: 300px;
+    color: #ffffff;
+}
+
+#header nav {
+    border-bottom: 1px solid #f55506;
+    background: #262626 url("../../img/header_menu.gif") repeat-x left top;
+    height: 30px;
+}
+
+#header .navbar {
+    border-radius: 0px;
+    min-height: 30px;
+    margin-bottom: 0px;
+    border: 0px solid transparent;
+}
+
+#header .navbar ul {
+    height: 30px;
+}
+
+#header .navbar li a {
+    height: 30px;
+}
+
+.navbar-nav > li > a {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    line-height: 30px;
+    color: #ffffff;
+}
+
+.nav > li > a {
+    padding: 0 15px;
+}
+
+.navbar-nav > li > a:hover {
+    background-color: transparent;
+}
+
+.navbar-nav > li > a:active {
+    background-color: transparent;
+}
