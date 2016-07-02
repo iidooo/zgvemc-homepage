@@ -13,10 +13,10 @@ SiteProperties = {
     //serverURL : "http://zgvemc.iidooo.com/gauge-server"
 
 
-// 正式环境
-//var clientURL = "http://zgvemc.iidooo.com";
-//var serverURL = "http://zgvemc.iidooo.com/gauge-server";
-
+    // 正式环境
+    //clientURL : "http://zgvemc.iidooo.com",
+    //serverURL : "http://zgvemc.iidooo.com/iidooo-cms",
+    //plantClientURL: "http://zgvemc.iidooo.com/gauge-web",
 };
 
 
@@ -123,6 +123,19 @@ function ajaxPost(url, data, callback) {
 function showdownPreview(content, containerID) {
     showdown.setOption('strikethrough', 'true');
     var converter = new showdown.Converter();
+    // 替换所有的>转义符号
+    content = content.replace(/&gt;/g, ">");
+    var rawMarkup = converter.makeHtml(content);
+    console.log(rawMarkup);
+    $("#" + containerID).html(rawMarkup);
+}
+
+function showdownConvert(containerID){
+    showdown.setOption('strikethrough', 'true');
+    var converter = new showdown.Converter();
+    // 替换所有的>转义符号
+    var content = document.getElementById(containerID).innerHTML;
+    content = content.replace(/&gt;/g, ">");
     var rawMarkup = converter.makeHtml(content);
     $("#" + containerID).html(rawMarkup);
 }

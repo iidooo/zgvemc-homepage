@@ -34,6 +34,7 @@ var Contact = React.createClass({
     },
     componentDidUpdate: function () {
         $("#contactMap").load(SiteProperties.clientURL + Page.ContactMap);
+        showdownConvert("contentBody");
 
     },
     render: function () {
@@ -52,7 +53,7 @@ var Contact = React.createClass({
                                     <div className="panel-heading">联系我们</div>
                                     <div className="panel-body">
                                         <div id="contactMap"></div>
-                                        {this.state.content.contentBody}
+                                        <div id="contentBody">{this.state.content.contentBody}</div>
                                     </div>
                                 </div>
                             </div>

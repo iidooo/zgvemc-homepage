@@ -32,6 +32,9 @@ var Content = React.createClass({displayName: "Content",
         this.state.contentID = id;
         ContentActions.getContent(this.state);
     },
+    componentDidUpdate: function () {
+        showdownConvert("contentBody");
+    },
     render: function () {
         return (
             React.createElement("div", null, 
@@ -43,8 +46,8 @@ var Content = React.createClass({displayName: "Content",
                             React.createElement(SideSection, null)
                         ), 
                         React.createElement("div", {className: "col-sm-9"}, 
-                            React.createElement("div", {className: "content-title"}, this.state.content.contentTitle), 
-                            React.createElement("div", {className: "content-body"}, 
+                            React.createElement("div", {className: "content-title"}, React.createElement("h2", null, this.state.content.contentTitle)), 
+                            React.createElement("div", {id: "contentBody", className: "content-body"}, 
                                 this.state.content.contentBody
                             )
                         )

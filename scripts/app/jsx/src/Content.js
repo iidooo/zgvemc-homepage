@@ -32,6 +32,9 @@ var Content = React.createClass({
         this.state.contentID = id;
         ContentActions.getContent(this.state);
     },
+    componentDidUpdate: function () {
+        showdownConvert("contentBody");
+    },
     render: function () {
         return (
             <div>
@@ -43,8 +46,8 @@ var Content = React.createClass({
                             <SideSection/>
                         </div>
                         <div className="col-sm-9">
-                            <div className="content-title">{this.state.content.contentTitle}</div>
-                            <div className="content-body">
+                            <div className="content-title"><h2>{this.state.content.contentTitle}</h2></div>
+                            <div id="contentBody" className="content-body">
                                 {this.state.content.contentBody}
                             </div>
                         </div>
