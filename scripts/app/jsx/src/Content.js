@@ -47,6 +47,7 @@ var Content = React.createClass({
                         </div>
                         <div className="col-sm-9">
                             <div className="content-title"><h2>{this.state.content.contentTitle}</h2></div>
+                            <div className="text-right">{new Date(this.state.content.createTime).format('yyyy-MM-dd')}</div>
                             <div id="contentBody" className="content-body">
                                 {this.state.content.contentBody}
                             </div>

@@ -15,8 +15,7 @@ var Index = React.createClass({displayName: "Index",
                         )
                     ), 
                     React.createElement("div", {className: "row"}, 
-                        React.createElement("div", {className: "col-sm-12"}, 
-                            React.createElement(Ads, null)
+                        React.createElement("div", {className: "col-sm-12"}
                         )
                     )
                 ), 

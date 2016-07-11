@@ -14,9 +14,9 @@ SiteProperties = {
 
 
     // 正式环境
-    //clientURL : "http://zgvemc.iidooo.com",
+    //clientURL : "http://www.zgvemc.com",
     //serverURL : "http://zgvemc.iidooo.com/iidooo-cms",
-    //plantClientURL: "http://zgvemc.iidooo.com/gauge-web",
+    //plantClientURL: "http://www.zgvemc.com/gauge-web",
 };
 
 

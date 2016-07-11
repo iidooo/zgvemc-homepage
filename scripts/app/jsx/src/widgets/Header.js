@@ -6,7 +6,7 @@ var Header = React.createClass({
         return (
             <div id="header" className="container">
                 <div className="banner">
-                    <h1 className="banner-title">中国车辆尾气排放在线监测平台</h1>
+                    <h1 className="banner-title"></h1>
                 </div>
                 <MainMenu/>
             </div>

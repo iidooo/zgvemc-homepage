@@ -33,7 +33,13 @@ var Contact = React.createClass({displayName: "Contact",
         ContactActions.getChannleContent(this.state);
     },
     componentDidUpdate: function () {
-        $("#contactMap").load(SiteProperties.clientURL + Page.ContactMap);
+        //$.get(
+        //    SiteProperties.clientURL + Page.ContactMap,
+        //    function(html){
+        //        console.log(html);
+        //        document.getElementById("contactMap").innerHTML = html;
+        //    })
+        //$("#contactMap html").load(SiteProperties.clientURL + Page.ContactMap);
         showdownConvert("contentBody");
 
     },
@@ -52,7 +58,9 @@ var Contact = React.createClass({displayName: "Contact",
                                 React.createElement("div", {className: "panel panel-success"}, 
                                     React.createElement("div", {className: "panel-heading"}, "联系我们"), 
                                     React.createElement("div", {className: "panel-body"}, 
-                                        React.createElement("div", {id: "contactMap"}), 
+                                        React.createElement("div", {id: "contactMap"}
+                                        ), 
+                                        React.createElement("iframe", {src: SiteProperties.clientURL + Page.ContactMap, width: "100%", height: "300px"}), 
                                         React.createElement("div", {id: "contentBody"}, this.state.content.contentBody)
                                     )
                                 )

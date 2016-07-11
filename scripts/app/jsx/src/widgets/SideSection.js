@@ -56,6 +56,11 @@ var LinkList = React.createClass({
                     <div className="panel-heading">友情链接</div>
                     <div className="panel-body">
                         <ul className="list-group">
+                            <li className="list-group-item"><a href="http://www.zhb.gov.cn/" target="_blank"><img
+                                src="../img/index/link6.png"/></a></li>
+                            <li className="list-group-item"><a href="http://www.moc.gov.cn/"
+                                                               target="_blank"><img
+                                src="../img/index/link8.png"/></a></li>
                             <li className="list-group-item"><a href="http://www.cnemc.cn" target="_blank"><img
                                 src="../img/index/link1.jpg"/></a></li>
                             <li className="list-group-item"><a href="http://www.hjjkyyj.com" target="_blank"><img
@@ -63,10 +68,12 @@ var LinkList = React.createClass({
                             <li className="list-group-item"><a href="http://hjjcgl.cnjournals.net/ch/index.aspx"
                                                                target="_blank"><img
                                 src="../img/index/link3.jpg"/></a></li>
-                            <li className="list-group-item"><a href="http://www.wanfangdata.com.cn" target="_blank"><img
-                                src="../img/index/link4.jpg"/></a></li>
-                            <li className="list-group-item"><a href="http://www.alljournals.cn" target="_blank"><img
-                                src="../img/index/link5.jpg"/></a></li>
+                            <li className="list-group-item"><a href="http://www.vecc-mep.org.cn/index.jsp"
+                                                               target="_blank"><img
+                                src="../img/index/link7.jpg"/></a></li>
+                            <li className="list-group-item"><a href="http://www.es.org.cn/cn/index.html"
+                                                               target="_blank"><img
+                                src="../img/index/link9.jpg"/></a></li>
                         </ul>
                     </div>
                 </div>

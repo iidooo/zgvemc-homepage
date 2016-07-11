@@ -16,7 +16,6 @@ var Index = React.createClass({
                     </div>
                     <div className="row">
                         <div className="col-sm-12">
-                            <Ads/>
                         </div>
                     </div>
                 </div>

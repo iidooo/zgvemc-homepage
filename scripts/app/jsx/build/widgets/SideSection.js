@@ -56,6 +56,11 @@ var LinkList = React.createClass({displayName: "LinkList",
                     React.createElement("div", {className: "panel-heading"}, "友情链接"), 
                     React.createElement("div", {className: "panel-body"}, 
                         React.createElement("ul", {className: "list-group"}, 
+                            React.createElement("li", {className: "list-group-item"}, React.createElement("a", {href: "http://www.zhb.gov.cn/", target: "_blank"}, React.createElement("img", {
+                                src: "../img/index/link6.png"}))), 
+                            React.createElement("li", {className: "list-group-item"}, React.createElement("a", {href: "http://www.moc.gov.cn/", 
+                                                               target: "_blank"}, React.createElement("img", {
+                                src: "../img/index/link8.png"}))), 
                             React.createElement("li", {className: "list-group-item"}, React.createElement("a", {href: "http://www.cnemc.cn", target: "_blank"}, React.createElement("img", {
                                 src: "../img/index/link1.jpg"}))), 
                             React.createElement("li", {className: "list-group-item"}, React.createElement("a", {href: "http://www.hjjkyyj.com", target: "_blank"}, React.createElement("img", {
@@ -63,10 +68,12 @@ var LinkList = React.createClass({displayName: "LinkList",
                             React.createElement("li", {className: "list-group-item"}, React.createElement("a", {href: "http://hjjcgl.cnjournals.net/ch/index.aspx", 
                                                                target: "_blank"}, React.createElement("img", {
                                 src: "../img/index/link3.jpg"}))), 
-                            React.createElement("li", {className: "list-group-item"}, React.createElement("a", {href: "http://www.wanfangdata.com.cn", target: "_blank"}, React.createElement("img", {
-                                src: "../img/index/link4.jpg"}))), 
-                            React.createElement("li", {className: "list-group-item"}, React.createElement("a", {href: "http://www.alljournals.cn", target: "_blank"}, React.createElement("img", {
-                                src: "../img/index/link5.jpg"})))
+                            React.createElement("li", {className: "list-group-item"}, React.createElement("a", {href: "http://www.vecc-mep.org.cn/index.jsp", 
+                                                               target: "_blank"}, React.createElement("img", {
+                                src: "../img/index/link7.jpg"}))), 
+                            React.createElement("li", {className: "list-group-item"}, React.createElement("a", {href: "http://www.es.org.cn/cn/index.html", 
+                                                               target: "_blank"}, React.createElement("img", {
+                                src: "../img/index/link9.jpg"})))
                         )
                     )
                 )

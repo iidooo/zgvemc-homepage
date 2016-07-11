@@ -33,7 +33,13 @@ var Contact = React.createClass({
         ContactActions.getChannleContent(this.state);
     },
     componentDidUpdate: function () {
-        $("#contactMap").load(SiteProperties.clientURL + Page.ContactMap);
+        //$.get(
+        //    SiteProperties.clientURL + Page.ContactMap,
+        //    function(html){
+        //        console.log(html);
+        //        document.getElementById("contactMap").innerHTML = html;
+        //    })
+        //$("#contactMap html").load(SiteProperties.clientURL + Page.ContactMap);
         showdownConvert("contentBody");
 
     },
@@ -52,7 +58,9 @@ var Contact = React.createClass({
                                 <div className="panel panel-success">
                                     <div className="panel-heading">联系我们</div>
                                     <div className="panel-body">
-                                        <div id="contactMap"></div>
+                                        <div id="contactMap">
+                                        </div>
+                                        <iframe src={SiteProperties.clientURL + Page.ContactMap} width="100%" height="300px"></iframe>
                                         <div id="contentBody">{this.state.content.contentBody}</div>
                                     </div>
                                 </div>
