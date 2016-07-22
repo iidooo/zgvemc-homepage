@@ -74,13 +74,13 @@ var ContentListItem = React.createClass({displayName: "ContentListItem",
         return (
             React.createElement("div", {className: "float-left width-150 height-200 margin-right-15 margin-bottom-50"}, 
                 React.createElement("div", null, 
-                    React.createElement("a", {href: SiteProperties.clientURL + Page.Content + "?id=" + this.props.content.contentID, 
+                    React.createElement("a", {href: SiteProperties.clientURL + Page.content + "?id=" + this.props.content.contentID, 
                        target: "_blank"}, 
                         React.createElement("img", {src: this.props.content.contentImageTitle})
                     )
                 ), 
                 React.createElement("div", {className: "word-over-hidden text-center"}, 
-                    React.createElement("a", {href: SiteProperties.clientURL + Page.Content + "?id=" + this.props.content.contentID, 
+                    React.createElement("a", {href: SiteProperties.clientURL + Page.content + "?id=" + this.props.content.contentID, 
                        target: "_blank"}, 
                         this.props.content.contentTitle
                     )

@@ -60,7 +60,7 @@ var Contact = React.createClass({displayName: "Contact",
                                     React.createElement("div", {className: "panel-body"}, 
                                         React.createElement("div", {id: "contactMap"}
                                         ), 
-                                        React.createElement("iframe", {src: SiteProperties.clientURL + Page.ContactMap, width: "100%", height: "300px"}), 
+                                        React.createElement("iframe", {src: SiteProperties.clientURL + Page.contactMap, width: "100%", height: "300px"}), 
                                         React.createElement("div", {id: "contentBody"}, this.state.content.contentBody)
                                     )
                                 )

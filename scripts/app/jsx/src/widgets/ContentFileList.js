@@ -71,12 +71,17 @@ var ContentList = React.createClass({
 
 
 var ContentListItem = React.createClass({
+
     render: function () {
+        var fileURL = "";
+        if(this.props.content.fileList.length > 0){
+            fileURL = this.props.content.fileList[0].fileURL;
+        }
         return (
             <li className="list-group-item">
                 <div className="row">
                     <div className="col-sm-8">
-                        <a href={this.props.content.fileURL}>
+                        <a href={fileURL}>
                             {this.props.content.contentTitle}
                         </a>
                     </div>

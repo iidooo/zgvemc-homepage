@@ -76,7 +76,7 @@ var ContentListItem = React.createClass({
             <li className="list-group-item">
                 <div className="row">
                     <div className="col-sm-8">
-                        <a href={SiteProperties.clientURL + Page.Content + "?id=" + this.props.content.contentID} target="_blank">
+                        <a href={SiteProperties.clientURL + Page.content + "?id=" + this.props.content.contentID} target="_blank">
                             {this.props.content.contentTitle}
                         </a>
                     </div>

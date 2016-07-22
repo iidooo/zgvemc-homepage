@@ -71,12 +71,17 @@ var ContentList = React.createClass({displayName: "ContentList",
 
 
 var ContentListItem = React.createClass({displayName: "ContentListItem",
+
     render: function () {
+        var fileURL = "";
+        if(this.props.content.fileList.length > 0){
+            fileURL = this.props.content.fileList[0].fileURL;
+        }
         return (
             React.createElement("li", {className: "list-group-item"}, 
                 React.createElement("div", {className: "row"}, 
                     React.createElement("div", {className: "col-sm-8"}, 
-                        React.createElement("a", {href: this.props.content.fileURL}, 
+                        React.createElement("a", {href: fileURL}, 
                             this.props.content.contentTitle
                         )
                     ), 

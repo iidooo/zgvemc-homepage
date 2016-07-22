@@ -6,17 +6,21 @@ SiteProperties = {
     siteCode: "zgvemc",
     // 开发环境
     clientURL: "http://localhost:63342/zgvemc-homepage",
-    plantClientURL: "http://localhost:63342/gauge-web",
-    serverURL: "http://localhost:8080/iidooo-cms",
+    //plantClientURL: "http://localhost:63342/gauge-web",
+    //serverURL: "http://192.168.31.103:8080/cms-server",
     // 测试环境
     //clientURL: "http://www.iidooo.com/gauge-web",
     //serverURL : "http://zgvemc.iidooo.com/gauge-server"
 
 
     // 正式环境
-    //clientURL : "http://www.zgvemc.com",
-    //serverURL : "http://zgvemc.iidooo.com/iidooo-cms",
-    //plantClientURL: "http://www.zgvemc.com/gauge-web",
+    //clientURL : "http://zgvemc.iidooo.com",
+    serverURL : "http://www.iidooo.com/cms-server",
+    plantClientURL: "http://www.zgvemc.com/gauge-web",
+
+
+    siteVersion: "1.0.1.0 B20160711",
+    cmsAPIVersion: "0.1.1.0 B20160711",
 };
 
 
@@ -40,14 +44,14 @@ API = {
 };
 
 Page = {
-    Index: "/pages/Index.html",
-    Product: "/pages/Product.html",
-    Trends: "/pages/Trends.html",
-    News: "/pages/News.html",
-    Contact: "/pages/Contact.html",
-    ContactMap: "/pages/ContactMap.html",
-    Download: "/pages/Download.html",
-    Content: "/pages/Content.html",
+    index: "/pages/index.html",
+    product: "/pages/product.html",
+    trends: "/pages/trends.html",
+    news: "/pages/news.html",
+    contact: "/pages/contact.html",
+    contactMap: "/pages/contactMap.html",
+    download: "/pages/download.html",
+    content: "/pages/content.html",
 };
 
 SessionKey = {

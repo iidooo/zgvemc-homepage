@@ -64,7 +64,7 @@ var BlockNewsListItem = React.createClass({displayName: "BlockNewsListItem",
             React.createElement("li", {className: "list-group-item"}, 
                 React.createElement("div", {className: "row"}, 
                     React.createElement("div", {className: "col-sm-8"}, 
-                        React.createElement("a", {href: SiteProperties.clientURL + Page.Content + "?id=" + this.props.content.contentID, target: "_blank"}, 
+                        React.createElement("a", {href: SiteProperties.clientURL + Page.content + "?id=" + this.props.content.contentID, target: "_blank"}, 
                             this.props.content.contentTitle
                         )
                     ), 

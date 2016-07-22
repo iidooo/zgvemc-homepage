@@ -60,7 +60,7 @@ var Contact = React.createClass({
                                     <div className="panel-body">
                                         <div id="contactMap">
                                         </div>
-                                        <iframe src={SiteProperties.clientURL + Page.ContactMap} width="100%" height="300px"></iframe>
+                                        <iframe src={SiteProperties.clientURL + Page.contactMap} width="100%" height="300px"></iframe>
                                         <div id="contentBody">{this.state.content.contentBody}</div>
                                     </div>
                                 </div>

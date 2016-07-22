@@ -74,13 +74,13 @@ var ContentListItem = React.createClass({
         return (
             <div className="float-left width-150 height-200 margin-right-15 margin-bottom-50">
                 <div>
-                    <a href={SiteProperties.clientURL + Page.Content + "?id=" + this.props.content.contentID}
+                    <a href={SiteProperties.clientURL + Page.content + "?id=" + this.props.content.contentID}
                        target="_blank">
                         <img src={this.props.content.contentImageTitle}/>
                     </a>
                 </div>
                 <div className="word-over-hidden text-center">
-                    <a href={SiteProperties.clientURL + Page.Content + "?id=" + this.props.content.contentID}
+                    <a href={SiteProperties.clientURL + Page.content + "?id=" + this.props.content.contentID}
                        target="_blank">
                         {this.props.content.contentTitle}
                     </a>
