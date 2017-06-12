@@ -25,7 +25,7 @@ var SideProductList = React.createClass({
                                 <a href={SiteProperties.plantClientURL} target="_blank">集装箱运输车辆尾气净化装置</a>
                             </li>
                             <li className="list-group-item">
-                                汽车遥感废弃分析仪（光测遥感）
+                                <a href={SiteProperties.telemetryWebURL} target="_blank">汽车遥感废弃分析仪（光测遥感）</a>
                             </li>
                             <li className="list-group-item">
                                 公交汽车尾气净化装置

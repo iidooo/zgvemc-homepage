@@ -5,7 +5,7 @@
 SiteProperties = {
     siteCode: "zgvemc",
     // 开发环境
-    clientURL: "http://localhost:63342/zgvemc-homepage",
+    //clientURL: "http://localhost:63342/zgvemc-homepage",
     //plantClientURL: "http://localhost:63342/gauge-web",
     //serverURL: "http://192.168.31.103:8080/cms-server",
     // 测试环境
@@ -14,10 +14,10 @@ SiteProperties = {
 
 
     // 正式环境
-    //clientURL : "http://zgvemc.iidooo.com",
+    clientURL : "http://www.zgvemc.com",
     serverURL : "http://www.iidooo.com/cms-server",
     plantClientURL: "http://www.zgvemc.com/gauge-web",
-
+    telemetryWebURL: 'http://www.zgvemc.com/telemetry-web',
 
     siteVersion: "1.0.1.0 B20160711",
     cmsAPIVersion: "0.1.1.0 B20160711",
